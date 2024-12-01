@@ -1,0 +1,87 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h2>Driver Dashboard</h2>
+
+<div id="trip-form">
+    <h3>Create New Trip</h3>
+    <form id="tripForm" method="POST">
+        <label for="vehicle_id">Vehicle:</label>
+        <select id="vehicle_id" name="vehicle_id"></select><br><br>
+        <label for="trip_date">Trip Date:</label>
+        <input type="date" id="trip_date" name="trip_date" required><br><br>
+        <label for="from_location">From:</label>
+        <input type="text" id="from_location" name="from_location" required><br><br>
+        <label for="to_location">To:</label>
+        <input type="text" id="to_location" name="to_location" required><br><br>
+        <label for="odometer_start">Odometer Start:</label>
+        <input type="number" id="odometer_start" name="odometer_start" required><br><br>
+        <button type="submit">Log Trip</button>
+    </form>
+</div>
+
+<div id="previous-trips">
+    <h3>Your Previous Trips</h3>
+    <ul id="trips-list">
+        {% for trip in trips %}
+            <li>{{ trip.date }} - {{ trip.from_location }} to {{ trip.to_location }}</li>
+        {% endfor %}
+    </ul>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Dynamically load vehicle options and handle form submissions
+        loadVehicles();
+        handleFormSubmit();
+    });
+
+    function loadVehicles() {
+        // Example for loading vehicle options dynamically
+        fetch('/api/vehicles')
+            .then(response => response.json())
+            .then(data => {
+                const vehicleSelect = document.getElementById('vehicle_id');
+                data.vehicles.forEach(vehicle => {
+                    const option = document.createElement('option');
+                    option.value = vehicle.id;
+                    option.textContent = `${vehicle.registration} - ${vehicle.make}`;
+                    vehicleSelect.appendChild(option);
+                });
+            });
+    }
+
+    function handleFormSubmit() {
+        document.getElementById('tripForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const formData = new FormData(this);
+            fetch('/driver/create_trip', {
+                method: 'POST',
+                body: formData
+            }).then(response => response.json())
+              .then(data => {
+                  alert(data.message);
+                  if (data.success) {
+                      // Refresh the trips list after success
+                      loadTrips();
+                  }
+              });
+        });
+    }
+
+    function loadTrips() {
+        // Load all previous trips for the driver
+        fetch('/api/trips')
+            .then(response => response.json())
+            .then(data => {
+                const tripsList = document.getElementById('trips-list');
+                tripsList.innerHTML = '';
+                data.trips.forEach(trip => {
+                    const li = document.createElement('li');
+                    li.textContent = `${trip.date} - ${trip.from_location} to ${trip.to_location}`;
+                    tripsList.appendChild(li);
+                });
+            });
+    }
+</script>
+{% endblock %}

@@ -1,0 +1,120 @@
+2024-11-30 22:59:14,693 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-11-30 22:59:14,706 - INFO - [33mPress CTRL+C to quit[0m
+2024-11-30 22:59:14,726 - INFO -  * Restarting with stat
+2024-11-30 22:59:15,967 - WARNING -  * Debugger is active!
+2024-11-30 22:59:16,007 - INFO -  * Debugger PIN: 894-217-017
+2024-11-30 23:19:53,151 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-11-30 23:19:53,152 - INFO - [33mPress CTRL+C to quit[0m
+2024-11-30 23:19:53,154 - INFO -  * Restarting with stat
+2024-11-30 23:19:54,243 - WARNING -  * Debugger is active!
+2024-11-30 23:19:54,247 - INFO -  * Debugger PIN: 813-805-804
+2024-11-30 23:20:24,519 - INFO - 127.0.0.1 - - [30/Nov/2024 23:20:24] "GET / HTTP/1.1" 200 -
+2024-11-30 23:20:26,102 - INFO - 127.0.0.1 - - [30/Nov/2024 23:20:26] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-11-30 23:21:04,231 - INFO - 127.0.0.1 - - [30/Nov/2024 23:21:04] "[33mGET /driver HTTP/1.1[0m" 404 -
+2024-11-30 23:25:28,832 - INFO - 127.0.0.1 - - [30/Nov/2024 23:25:28] "[35m[1mGET /dashboard HTTP/1.1[0m" 500 -
+2024-11-30 23:25:29,156 - INFO - 127.0.0.1 - - [30/Nov/2024 23:25:29] "GET /dashboard?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2024-11-30 23:25:29,156 - INFO - 127.0.0.1 - - [30/Nov/2024 23:25:29] "GET /dashboard?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2024-11-30 23:25:29,317 - INFO - 127.0.0.1 - - [30/Nov/2024 23:25:29] "GET /dashboard?__debugger__=yes&cmd=resource&f=console.png&s=098LHYauiIVUkQa1z6PD HTTP/1.1" 200 -
+2024-11-30 23:25:29,723 - INFO - 127.0.0.1 - - [30/Nov/2024 23:25:29] "GET /dashboard?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2024-11-30 23:29:08,226 - INFO - 127.0.0.1 - - [30/Nov/2024 23:29:08] "[33mGET /work_tickets HTTP/1.1[0m" 404 -
+2024-12-01 23:59:06,279 - ERROR - Error: Directory migrations already exists and is not empty
+2024-12-02 00:02:48,984 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-12-02 00:02:48,984 - INFO - [33mPress CTRL+C to quit[0m
+2024-12-02 00:02:49,026 - INFO -  * Restarting with stat
+2024-12-02 00:02:50,004 - WARNING -  * Debugger is active!
+2024-12-02 00:02:50,096 - INFO -  * Debugger PIN: 813-805-804
+2024-12-02 00:03:04,763 - INFO - 127.0.0.1 - - [02/Dec/2024 00:03:04] "GET / HTTP/1.1" 200 -
+2024-12-02 00:03:08,400 - INFO - 127.0.0.1 - - [02/Dec/2024 00:03:08] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-12-02 00:07:13,070 - INFO - 127.0.0.1 - - [02/Dec/2024 00:07:13] "GET / HTTP/1.1" 200 -
+2024-12-02 00:07:16,104 - INFO - 127.0.0.1 - - [02/Dec/2024 00:07:16] "GET / HTTP/1.1" 200 -
+2024-12-02 00:07:16,873 - INFO - 127.0.0.1 - - [02/Dec/2024 00:07:16] "GET / HTTP/1.1" 200 -
+2024-12-02 00:07:17,441 - INFO - 127.0.0.1 - - [02/Dec/2024 00:07:17] "GET / HTTP/1.1" 200 -
+2024-12-02 00:07:18,310 - INFO - 127.0.0.1 - - [02/Dec/2024 00:07:18] "GET / HTTP/1.1" 200 -
+2024-12-02 00:09:08,137 - ERROR - Error: Directory migrations already exists and is not empty
+2024-12-02 00:14:37,193 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-12-02 00:14:37,194 - INFO - [33mPress CTRL+C to quit[0m
+2024-12-02 00:14:37,208 - INFO -  * Restarting with stat
+2024-12-02 00:14:38,264 - WARNING -  * Debugger is active!
+2024-12-02 00:14:38,401 - INFO -  * Debugger PIN: 813-805-804
+2024-12-02 00:14:50,990 - INFO - 127.0.0.1 - - [02/Dec/2024 00:14:50] "[35m[1mGET /login HTTP/1.1[0m" 500 -
+2024-12-02 00:14:51,917 - INFO - 127.0.0.1 - - [02/Dec/2024 00:14:51] "GET /login?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2024-12-02 00:14:51,984 - INFO - 127.0.0.1 - - [02/Dec/2024 00:14:51] "GET /login?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2024-12-02 00:14:52,184 - INFO - 127.0.0.1 - - [02/Dec/2024 00:14:52] "GET /login?__debugger__=yes&cmd=resource&f=console.png&s=wT9uxGwCK3DN0xBhVNZV HTTP/1.1" 200 -
+2024-12-02 00:14:53,086 - INFO - 127.0.0.1 - - [02/Dec/2024 00:14:53] "GET /login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2024-12-02 00:17:09,264 - INFO -  * Detected change in 'C:\\Users\\Dottii\\Desktop\\transport_system\\app\\routes\\auth.py', reloading
+2024-12-02 00:17:09,414 - INFO -  * Restarting with stat
+2024-12-02 00:17:11,148 - WARNING -  * Debugger is active!
+2024-12-02 00:17:11,152 - INFO -  * Debugger PIN: 813-805-804
+2024-12-02 00:17:21,820 - INFO - 127.0.0.1 - - [02/Dec/2024 00:17:21] "[35m[1mGET /login HTTP/1.1[0m" 500 -
+2024-12-02 00:17:21,961 - INFO - 127.0.0.1 - - [02/Dec/2024 00:17:21] "[36mGET /login?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2024-12-02 00:17:21,963 - INFO - 127.0.0.1 - - [02/Dec/2024 00:17:21] "[36mGET /login?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2024-12-02 00:17:21,983 - INFO - 127.0.0.1 - - [02/Dec/2024 00:17:21] "GET /login?__debugger__=yes&cmd=resource&f=console.png&s=oNMaoyGtUt1yBpr7uXOR HTTP/1.1" 200 -
+2024-12-02 00:17:22,371 - INFO - 127.0.0.1 - - [02/Dec/2024 00:17:22] "[36mGET /login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-12-02 00:17:24,698 - INFO - 127.0.0.1 - - [02/Dec/2024 00:17:24] "[35m[1mGET /login HTTP/1.1[0m" 500 -
+2024-12-02 00:17:24,742 - INFO - 127.0.0.1 - - [02/Dec/2024 00:17:24] "[36mGET /login?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2024-12-02 00:17:24,758 - INFO - 127.0.0.1 - - [02/Dec/2024 00:17:24] "[36mGET /login?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2024-12-02 00:17:24,787 - INFO - 127.0.0.1 - - [02/Dec/2024 00:17:24] "[36mGET /login?__debugger__=yes&cmd=resource&f=console.png&s=oNMaoyGtUt1yBpr7uXOR HTTP/1.1[0m" 304 -
+2024-12-02 00:17:25,149 - INFO - 127.0.0.1 - - [02/Dec/2024 00:17:25] "[36mGET /login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-12-02 00:17:47,510 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-12-02 00:17:47,510 - INFO - [33mPress CTRL+C to quit[0m
+2024-12-02 00:17:47,512 - INFO -  * Restarting with stat
+2024-12-02 00:17:48,667 - WARNING -  * Debugger is active!
+2024-12-02 00:17:48,672 - INFO -  * Debugger PIN: 813-805-804
+2024-12-02 00:17:54,046 - INFO - 127.0.0.1 - - [02/Dec/2024 00:17:54] "[35m[1mGET /login HTTP/1.1[0m" 500 -
+2024-12-02 00:17:54,187 - INFO - 127.0.0.1 - - [02/Dec/2024 00:17:54] "[36mGET /login?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2024-12-02 00:17:54,192 - INFO - 127.0.0.1 - - [02/Dec/2024 00:17:54] "[36mGET /login?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2024-12-02 00:17:54,210 - INFO - 127.0.0.1 - - [02/Dec/2024 00:17:54] "GET /login?__debugger__=yes&cmd=resource&f=console.png&s=1rmEefHNuT6nsopZKCP1 HTTP/1.1" 200 -
+2024-12-02 00:17:54,580 - INFO - 127.0.0.1 - - [02/Dec/2024 00:17:54] "[36mGET /login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-12-02 00:19:40,933 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-12-02 00:19:40,933 - INFO - [33mPress CTRL+C to quit[0m
+2024-12-02 00:19:40,937 - INFO -  * Restarting with stat
+2024-12-02 00:19:41,814 - WARNING -  * Debugger is active!
+2024-12-02 00:19:41,817 - INFO -  * Debugger PIN: 813-805-804
+2024-12-02 00:19:50,466 - INFO - 127.0.0.1 - - [02/Dec/2024 00:19:50] "GET / HTTP/1.1" 200 -
+2024-12-02 00:19:57,245 - INFO - 127.0.0.1 - - [02/Dec/2024 00:19:57] "[35m[1mGET /login HTTP/1.1[0m" 500 -
+2024-12-02 00:19:57,395 - INFO - 127.0.0.1 - - [02/Dec/2024 00:19:57] "[36mGET /login?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2024-12-02 00:19:57,397 - INFO - 127.0.0.1 - - [02/Dec/2024 00:19:57] "[36mGET /login?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2024-12-02 00:19:57,415 - INFO - 127.0.0.1 - - [02/Dec/2024 00:19:57] "GET /login?__debugger__=yes&cmd=resource&f=console.png&s=OQTADEF5qK3ccIaU0M8r HTTP/1.1" 200 -
+2024-12-02 00:20:51,600 - INFO - 127.0.0.1 - - [02/Dec/2024 00:20:51] "[35m[1mGET /login HTTP/1.1[0m" 500 -
+2024-12-02 00:20:51,634 - INFO - 127.0.0.1 - - [02/Dec/2024 00:20:51] "[36mGET /login?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2024-12-02 00:20:51,640 - INFO - 127.0.0.1 - - [02/Dec/2024 00:20:51] "[36mGET /login?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2024-12-02 00:20:51,666 - INFO - 127.0.0.1 - - [02/Dec/2024 00:20:51] "[36mGET /login?__debugger__=yes&cmd=resource&f=console.png&s=OQTADEF5qK3ccIaU0M8r HTTP/1.1[0m" 304 -
+2024-12-02 00:20:52,052 - INFO - 127.0.0.1 - - [02/Dec/2024 00:20:52] "[36mGET /login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-12-02 00:21:02,600 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-12-02 00:21:02,600 - INFO - [33mPress CTRL+C to quit[0m
+2024-12-02 00:21:02,603 - INFO -  * Restarting with stat
+2024-12-02 00:21:04,099 - WARNING -  * Debugger is active!
+2024-12-02 00:21:04,106 - INFO -  * Debugger PIN: 813-805-804
+2024-12-02 00:21:10,959 - INFO - 127.0.0.1 - - [02/Dec/2024 00:21:10] "[35m[1mGET /login HTTP/1.1[0m" 500 -
+2024-12-02 00:21:11,093 - INFO - 127.0.0.1 - - [02/Dec/2024 00:21:11] "[36mGET /login?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2024-12-02 00:21:11,096 - INFO - 127.0.0.1 - - [02/Dec/2024 00:21:11] "[36mGET /login?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2024-12-02 00:21:11,113 - INFO - 127.0.0.1 - - [02/Dec/2024 00:21:11] "GET /login?__debugger__=yes&cmd=resource&f=console.png&s=9GVd9tHXGX1WegLRrl7U HTTP/1.1" 200 -
+2024-12-02 00:21:11,458 - INFO - 127.0.0.1 - - [02/Dec/2024 00:21:11] "[36mGET /login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-12-02 00:21:41,431 - INFO - 127.0.0.1 - - [02/Dec/2024 00:21:41] "[35m[1mGET /dashboard HTTP/1.1[0m" 500 -
+2024-12-02 00:21:41,491 - INFO - 127.0.0.1 - - [02/Dec/2024 00:21:41] "GET /dashboard?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2024-12-02 00:21:41,492 - INFO - 127.0.0.1 - - [02/Dec/2024 00:21:41] "GET /dashboard?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2024-12-02 00:21:41,557 - INFO - 127.0.0.1 - - [02/Dec/2024 00:21:41] "GET /dashboard?__debugger__=yes&cmd=resource&f=console.png&s=9GVd9tHXGX1WegLRrl7U HTTP/1.1" 200 -
+2024-12-02 00:31:56,446 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-12-02 00:31:56,447 - INFO - [33mPress CTRL+C to quit[0m
+2024-12-02 00:31:56,460 - INFO -  * Restarting with stat
+2024-12-02 00:31:57,499 - WARNING -  * Debugger is active!
+2024-12-02 00:31:57,503 - INFO -  * Debugger PIN: 813-805-804
+2024-12-02 00:32:03,907 - INFO - 127.0.0.1 - - [02/Dec/2024 00:32:03] "GET / HTTP/1.1" 200 -
+2024-12-02 00:32:09,990 - INFO - 127.0.0.1 - - [02/Dec/2024 00:32:09] "GET /login HTTP/1.1" 200 -
+2024-12-02 00:32:22,340 - INFO - 127.0.0.1 - - [02/Dec/2024 00:32:22] "GET /login HTTP/1.1" 200 -
+2024-12-02 00:32:39,313 - INFO - 127.0.0.1 - - [02/Dec/2024 00:32:39] "[35m[1mGET /dashboard HTTP/1.1[0m" 500 -
+2024-12-02 00:32:39,553 - INFO - 127.0.0.1 - - [02/Dec/2024 00:32:39] "[36mGET /dashboard?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2024-12-02 00:32:39,559 - INFO - 127.0.0.1 - - [02/Dec/2024 00:32:39] "[36mGET /dashboard?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2024-12-02 00:32:39,575 - INFO - 127.0.0.1 - - [02/Dec/2024 00:32:39] "GET /dashboard?__debugger__=yes&cmd=resource&f=console.png&s=Gfz9DsNYksS9sO2gmvd6 HTTP/1.1" 200 -
+2024-12-02 00:37:52,652 - INFO -  * Detected change in 'C:\\Users\\Dottii\\Desktop\\transport_system\\app\\routes\\driver.py', reloading
+2024-12-02 00:37:52,795 - INFO -  * Restarting with stat
+2024-12-02 00:37:56,112 - WARNING -  * Debugger is active!
+2024-12-02 00:37:56,117 - INFO -  * Debugger PIN: 813-805-804

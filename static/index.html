@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transport Management System</title>
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Transport Management System</h1>
+    </header>
+    <main>
+        <!-- Driver Section -->
+        <section id="driver-section" class="role-section" style="display: none;">
+            <h2>Driver Panel</h2>
+            <form id="create-trip-form">
+                <label for="vehicle-id">Vehicle ID:</label>
+                <input type="text" id="vehicle-id" placeholder="Vehicle ID" required>
+                
+                <label for="trip-date">Trip Date:</label>
+                <input type="date" id="trip-date" required>
+                
+                <label for="from-location">From Location:</label>
+                <input type="text" id="from-location" placeholder="From Location" required>
+                
+                <label for="to-location">To Location:</label>
+                <input type="text" id="to-location" placeholder="To Location" required>
+                
+                <label for="odometer-start">Odometer Start:</label>
+                <input type="number" id="odometer-start" placeholder="Odometer Start" required>
+                
+                <button type="submit">Create Trip</button>
+            </form>
+        </section>
+
+        <!-- Officer Section -->
+        <section id="officer-section" class="role-section" style="display: none;">
+            <h2>Officer Panel</h2>
+            <button id="view-pending-trips">View Pending Trips</button>
+            <div id="pending-trips-display"></div>
+        </section>
+
+        <!-- Transport Officer Section -->
+        <section id="transport-officer-section" class="role-section" style="display: none;">
+            <h2>Transport Officer Panel</h2>
+            <button id="view-tickets">View All Work Tickets</button>
+            <div id="tickets-display"></div>
+        </section>
+    </main>
+
+    <script src="static/js/app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h2>Transport Officer Dashboard</h2>
+
+<div id="work-tickets">
+    <h3>All Work Tickets</h3>
+    <ul id="work-tickets-list">
+        {% for ticket in tickets %}
+            <li>{{ ticket.ticket_number }} - {{ ticket.vehicle.registration }} - {{ ticket.date }} 
+                <a href="{{ url_for('transport_officer.view_ticket', ticket_id=ticket.id) }}">View</a>
+            </li>
+        {% endfor %}
+    </ul>
+</div>
+{% endblock %}
