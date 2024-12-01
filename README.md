@@ -1,5 +1,3 @@
-# transport_management_system
-
 # Transport Management System
 
 A **paperless transport management system** designed to digitize and streamline the operations of the **Kenyan Government Transport Department**. This system enhances efficiency, accountability, and transparency while reducing paperwork and operational inefficiencies.
