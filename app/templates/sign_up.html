@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block title %}Sign Up{% endblock %}
+
+{% block content %}
+<section id="sign-up-section">
+    <h2>Create Your Profile</h2>
+    <form method="POST" action="{{ url_for('auth.sign_up') }}">
+        <!-- Username Field -->
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" placeholder="Enter your username" required>
+
+        <!-- Password Field -->
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter your password" required>
+
+        <!-- Role Dropdown -->
+        <label for="role">Select Role:</label>
+        <select id="role" name="role" required>
+            <option value="" disabled selected>Choose your role</option>
+            <option value="driver">Driver</option>
+            <option value="authorizing_officer">Authorizing Officer</option>
+            <option value="transport_officer">Transport Officer</option>
+        </select>
+
+        <button type="submit">Sign Up</button>
+    </form>
+</section>
+{% endblock %}

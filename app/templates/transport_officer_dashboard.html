@@ -1,0 +1,67 @@
+{% extends "base.html" %}
+
+{% block title %}Transport Officer Dashboard{% endblock %}
+
+{% block content %}
+<section id="transport-officer-dashboard">
+    <h2>Transport Officer Dashboard</h2>
+
+    <button id="generate-work-ticket">Generate Work Ticket</button>
+    <form id="generate-ticket-form" style="display:none;">
+        <label for="vehicle-id">Vehicle ID:</label>
+        <input type="text" id="vehicle-id" name="vehicle_id" placeholder="Enter Vehicle ID" required>
+
+        <label for="month">Month:</label>
+        <input type="number" id="month" name="month" placeholder="Month (1-12)" required>
+
+        <label for="year">Year:</label>
+        <input type="number" id="year" name="year" placeholder="Year" required>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <button id="view-work-tickets">View Work Tickets</button>
+    <div id="work-tickets-display"></div>
+</section>
+
+<script>
+    document.getElementById('generate-work-ticket').addEventListener('click', () => {
+        document.getElementById('generate-ticket-form').style.display = 'block';
+    });
+
+    document.getElementById('generate-ticket-form').addEventListener('submit', async (e) => {
+        e.preventDefault();
+
+        const formData = new FormData(e.target);
+        const data = {
+            vehicle_id: formData.get('vehicle_id'),
+            month: formData.get('month'),
+            year: formData.get('year'),
+        };
+
+        const response = await fetch('/transport_officer/generate_work_ticket', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(data),
+        });
+
+        const result = await response.json();
+        alert(result.message);
+    });
+
+    document.getElementById('view-work-tickets').addEventListener('click', async () => {
+        const response = await fetch('/transport_officer/work_tickets');
+        const tickets = await response.json();
+        const display = document.getElementById('work-tickets-display');
+
+        display.innerHTML = tickets.map(ticket => `
+            <div>
+                <p><strong>Ticket No:</strong> ${ticket.ticket_no}</p>
+                <p><strong>Vehicle ID:</strong> ${ticket.vehicle_id}</p>
+                <p><strong>Month:</strong> ${ticket.month}</p>
+                <p><strong>Year:</strong> ${ticket.year}</p>
+            </div>
+        `).join('');
+    });
+</script>
+{% endblock %}

@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+
+{% block title %}Officer Dashboard{% endblock %}
+
+{% block content %}
+<section id="officer-dashboard">
+    <h2>Officer Dashboard</h2>
+    <button id="view-pending-trips">View Pending Trips</button>
+    <div id="pending-trips-display"></div>
+</section>
+
+<script>
+    document.getElementById('view-pending-trips').addEventListener('click', async () => {
+        const response = await fetch('/officer/pending_trips');
+        const trips = await response.json();
+        const display = document.getElementById('pending-trips-display');
+
+        display.innerHTML = trips.map(trip => `
+            <div>
+                <p><strong>Trip ID:</strong> ${trip.id}</p>
+                <p><strong>Driver:</strong> ${trip.driver_id}</p>
+                <p><strong>From:</strong> ${trip.from_location} - <strong>To:</strong> ${trip.to_location}</p>
+                <button onclick="authorizeTrip(${trip.id}, 'Approved')">Approve</button>
+                <button onclick="authorizeTrip(${trip.id}, 'Rejected')">Reject</button>
+            </div>
+        `).join('');
+    });
+
+    async function authorizeTrip(tripId, status) {
+        await fetch(`/officer/authorize_trip/${tripId}`, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ status })
+        });
+        alert(`Trip ${tripId} ${status}`);
+        document.getElementById('view-pending-trips').click();
+    }
+</script>
+{% endblock %}
